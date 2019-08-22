@@ -63,4 +63,4 @@ I created the site using the [Bootstrap Jumbotron](https://getbootstrap.com/docs
 
 ## Running the Code
 
-[Clone / Download](https://github.com/dh4u/bootcamp-guitar-store) the project to your computer and open the index.html file.
+[Clone / Download](https://github.com/dh4u/bootcamp-guitar-store/tree/v1.0) the project to your computer and open the index.html file.
