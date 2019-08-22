@@ -1,0 +1,55 @@
+/*.striped:nth-child(even) {background: #CCC}
+
+div:nth-of-type(3){text-align: right;}*/
+
+img:hover {
+    /*filter: grayscale(50%);*/
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* The two input declarations below are from the show hide concept in CSS shamelessly lifted from the Hidden Radio Buttons comment on https://stackoverflow.com/questions/17731457/hide-show-content-list-with-only-css-no-javascript-used */
+input#show1:checked ~ span#content1
+,input#show2:checked ~ span#content2
+,input#show3:checked ~ span#content3
+,input#show4:checked ~ span#content4
+,input#show5:checked ~ span#content5
+,input#show6:checked ~ span#content6
+,input#show7:checked ~ span#content7
+,input#show8:checked ~ span#content8
+,input#show9:checked ~ span#content9
+,input#show10:checked ~ span#content10
+,input#show11:checked ~ span#content11
+,input#show12:checked ~ span#content12{
+    display:block;
+}
+
+input#hide1:checked ~ span#content1
+,input#hide2:checked ~ span#content2
+,input#hide3:checked ~ span#content3
+,input#hide4:checked ~ span#content4
+,input#hide5:checked ~ span#content5
+,input#hide6:checked ~ span#content6
+,input#hide7:checked ~ span#content7
+,input#hide8:checked ~ span#content8
+,input#hide9:checked ~ span#content9
+,input#hide10:checked ~ span#content10
+,input#hide11:checked ~ span#content11
+,input#hide12:checked ~ span#content12 {
+    display:none;
+}
+
+/* The span declaration below is from the show hide concept in CSS shamelessly lifted from the Hidden Radio Buttons comment on https://stackoverflow.com/questions/17731457/hide-show-content-list-with-only-css-no-javascript-used */
+span#content1
+,span#content2
+,span#content3
+,span#content4
+,span#content5
+,span#content6
+,span#content7
+,span#content8
+,span#content9
+,span#content10
+,span#content11
+,span#content12{
+    display:none;
+}
