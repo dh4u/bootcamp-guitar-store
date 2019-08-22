@@ -1,9 +1,0 @@
-/*.striped:nth-child(even) {background: #CCC}
-
-div:nth-of-type(3){text-align: right;}*/
-
-
-img:hover {
-    /*filter: grayscale(50%);*/
-    /*transform: scale(1.5);*/ /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
