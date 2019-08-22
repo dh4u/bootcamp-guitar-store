@@ -20,7 +20,6 @@ class Catalog extends React.Component{
                     <div className="col">
                         <img id="image" src="" width="300" alt="" /><br />
                         <h4 id="price">&nbsp;</h4>
-                        {/* <a href="#" id="addToCart" className="btn btn-primary" role="button" onClick="" style={{color: 'white'}}>Add to Cart &raquo;</a> */}
                         <Button id="addToCart" className="btn btn-primary" style={{color: 'white'}}>Add to Cart &raquo;</Button>
                     </div>
                     <div className="col">

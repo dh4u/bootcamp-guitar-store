@@ -24,7 +24,6 @@ function buildCatalog(){
             catalog += '<a href="/Catalog/' + inventoryItems[i].index + '"><img src=' + image + ' class="img-responsive img-thumbnail shadow p-3 mb-5 bg-white rounded" alt="' + inventoryItems[i].longName + '" style={marginBottom: .25rem !important} /></a>';
             catalog += '<h4>' + inventoryItems[i].price + '</h4>';
             catalog += '<p><a class="btn btn-primary" href="/Catalog/' + i + '" role="button">View details &raquo;</a>&nbsp;';
-            //catalog += '<a class="btn btn-primary" role="button" onclick="() => addToCart(' + i + ', ' + inventoryItems[i].price.replace("$", "").replace(",", "") + ', 1); showTotalModal();" style="color: white;">Add to Cart &raquo;</a></p></div>';
             catalog += '<a class="btn btn-primary" role="button" onclick="addToCart(' + i + ', ' + inventoryItems[i].price.replace("$", "").replace(",", "") + ', 1); showTotalModal();" style="color: white;">Add to Cart &raquo;</a></p></div>';
                
             if( i % 3 === 2){
