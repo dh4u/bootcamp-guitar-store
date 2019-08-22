@@ -1,8 +1,0 @@
-.borderless th { 
-    border: none !important; 
-    padding: 0px !important;
-    text-align: center;
-}
-tbody tr td:nth-child(3){
-    text-align: right;
-}

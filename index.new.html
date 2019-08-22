@@ -1,0 +1,163 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Guitarist Center* - Rock On!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/global.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/index.css" type="text/css" />
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="Javascript/shopping.cart.js"></script>
+    
+    <!--must be run after jquery and shopping.cart.js-->
+    <script type="text/javascript" src="Javascript/enable.disable.cart.js"></script>
+    <!--<script type="text/javascript" src="Javascript/index.js"></script>-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html">Guitarist Center</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalog.html">Catalog</a>
+                </li>
+                <li class="nav-item" id="cartLinkDisabled">
+                    <!--<a class="nav-link disabled" href="#">Cart</a>-->
+                    <a class="nav-link" href="shopping.cart.html">Cart</a>
+                </li>
+                <li class="nav-item" id="cartLinkEnabled">
+                    <a class="nav-link" href="shopping.cart.html">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="locations.html">Locations</a>
+                </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>-->
+                <!--<li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>-->
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <main role="main">
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-image: url(Images/hero.jpg);">
+            <div class="container">
+                <h1 class="display-3 heroText">Guitarist Center*</h1>
+                <h4 class="heroText">"Guitarist Center has a great selection!" - Rawkin Dude</h4>
+                <p><a class="btn btn-primary btn-lg" href="catalog.html" role="button">Visit our catalog &raquo;</a></p>
+            </div>
+        </div>
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Legend Profile</h2>
+                    <p>Widely recognized as one of the most creative and influential musicians of the 20th century, <a href="https://jimihendrix.com" target="_blank">Jimi Hendrix</a> pioneered the explosive possibilities of the electric guitar. Hendrix’s innovative style of combining fuzz, feedback and controlled distortion created a new musical form. Because he was unable to read or write music, it is nothing short of remarkable that Jimi Hendrix’s meteoric rise in the music took place in just four short years. His musical language continues to influence a host of modern musicians, from George Clinton to Miles Davis, and Steve Vai to Jonny Lang.</p>
+                    <p><a class="btn btn-primary btn-lg" href="https://jimihendrix.com" target="_blank" role="button">Learn More About Jimi &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Tutorial</h2>
+                    <p>Learn to play the <a href="https://jimihendrix.com" target="_blank">Jimi Hendrix</a> Monterrey Pop Festival version of Howlin' Wolf's Killing Floor. </p>
+                    <iframe src="https://www.youtube.com/embed/yvZ2Ma8Kmg4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">View details &raquo;</a></p>-->
+                </div>
+                <div class="col-md-4">
+                    <h2>Community</h2>
+                    <p>Rehearsal Space for rent</p>
+                    <h5 style="text-align:center;">The Cathedral Room</h5>
+                    <img src="Images/rehersalspace.jpg" class="img-responsive img-thumbnail shadow p-3 mb-5 bg-white rounded" />
+                    
+                    <span id="content1" style="text-align:center;" style="display:none;">
+                        <span style="color:rgb(218, 184, 68)">Large room. Designed for band rehearsals of 4-10 people.<br></span>
+                        <strong>Gear Included in Rental:</strong>
+                        <br />
+                        <u>Drum Kit:</u> - Gretsch Renown 5-piece drum kit
+                        <br>Zildjian Sweet Ride, New Beat HH's, 16" &amp; 18" A crashes
+                        <br />
+                        <u>Bass Amp:</u> - TC Electronic BG250-110
+                        <br>
+                        <u>Guitar Amps:</u> - VOX AC30, Fender Ultimate Chorus 2x10
+                        <br>
+                        <u>Keyboard:</u> - Casio WK-45 unweighted 76-key
+                        <br />
+                        <u>Pro Gear:</u> - 3 SM58 mics w/ stands, 2 Mackie PA speakers, 12-Track Mixer
+                        <br />
+                        <br />
+                        <a href="https://www.7drumcity.com/space-rentals.html" target="_blank">Book now</a>
+                        <br />
+                    </span>
+                    <button class="btn btn-primary btn-lg" role="button" id="hideDetails" onclick="$( '#content1' ).toggle(); $( '#viewDetails' ).toggle(); $(this).toggle();" style="display: none;">Hide details &raquo;</button><button class="btn btn-primary btn-lg" role="button" id="viewDetails" onclick="$( '#content1' ).toggle(); $( '#showDetails' ).toggle(); $(this).toggle();" style="visibility: visible;">View details &raquo;</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Legend Profile</h2>
+                    <p><a href="https://www.jimmypage.com" target="_blank">Jimmy Page</a> was born January 9, 1944, in Heston, England. In 1965, he was asked to join the Yardbirds. In 1968 he formed a new band, renamed Led Zeppelin. The band toured the United States and released their first album, Led Zeppelin I, in 1969. Led Zeppelin soon developed a strong following. In addition to their recordings, Led Zeppelin was one of the most successful live acts of the 1970s. </p>
+                    <p><a class="btn btn-primary btn-lg" href="https://www.jimmypage.com" target="_blank" role="button">Learn More About Jimmy &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Community</h2>
+                    <p>Are you into 80s music? We are a cover band looking for a drummer.</p> <p>Join <em>Sweep the Leg Johnny!!</em> </p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Contact Us &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Tutorial</h2>
+                    <p>Learn to play Matthew Sweet's Girlfriend</p>
+                    <iframe src="https://www.youtube.com/embed/4mqDrRdyDLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">View details &raquo;</a></p>-->
+                </div>
+            </div>
+            <hr>
+            <!--<div class="row">
+                <div class="col-md-4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">View details &raquo;</a></p>
+                </div>
+            </div>
+            <hr>-->
+        </div> <!-- /container -->
+    </main>
+    <footer class="container">
+        <p>&copy; Guitarist Center* 2018-2019</p>
+        <p><em style="font-size: smaller;">*Shamelessly taking content from <a href="https://www.fender.com/" target="_blank">Fender.com</a> and <a href="www.guitarcenter.com" target="_blank">Guitar Center</a>.</em></p>
+    </footer>
+</body>
+
+</html>

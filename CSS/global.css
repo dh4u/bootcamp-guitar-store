@@ -1,3 +1,7 @@
+.btn-primary{
+    color: white;
+}
+
 .heroText{
     color: #007bff;
 }
@@ -16,7 +20,8 @@ body{
 }
 
 img{
-    border: 5px solid #007bff;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
     padding: 3px;
 }
 
