@@ -1,5 +1,5 @@
 import React from 'react'; 
-import {addToCart, showTotalModal} from './shopping.cart.js/index.js.js';
+import {addToCart, showTotalModal} from './Cart.helper';
 
 window.showTotalModal = showTotalModal;
 window.addToCart = addToCart;

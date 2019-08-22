@@ -24,7 +24,7 @@ export function showProductDetails(item_id){
     $( "#image" ).attr("alt", item.longName);
     
     //addToCart function
-     $( "#addToCart" ).attr("onclick", "addToCart(" + item_id + ", " + item.price.replace("$", "").replace(",", "") + ", 1)");
+    $( "#addToCart" ).attr("onClick", `addToCart(${item_id}, ${item.price.replace("$", "").replace(",", "")}, 1); showTotalModal();`);
     
     //console.log("done");
 }

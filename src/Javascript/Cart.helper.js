@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import {getProductDetails} from './product.details.js';
+import {getProductDetails} from './Catalog.Product.helper.js';
 import modal from 'bootstrap';
 window.$ = $;
 

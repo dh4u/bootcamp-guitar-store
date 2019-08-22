@@ -1,9 +1,9 @@
 import React from 'react';
 import Accordion from './Accordion.js'
-import {buildCart, buildCheckout, checkOut, completePurchase, emptyCart, enableDiscount, getBillingOptions, getCartItems, getShippingOptions, initializeCart, updateQuantity, updateShipping} from './shopping.cart.js';
+import {buildCart, buildCheckout, checkOut, completePurchase, emptyCart, enableDiscount, getBillingOptions, getCartItems, getShippingOptions, initializeCart, updateQuantity, updateShipping} from './Cart.helper.js';
 import {initializeInventory} from './inventory.js';
 import $ from 'jquery'; 
-require('../CSS/shopping.cart.css');
+require('../CSS/Cart.css');
 
 class Cart extends React.Component{
 

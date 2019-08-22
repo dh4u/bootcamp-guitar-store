@@ -1,13 +1,10 @@
 import React from 'react'; 
-import {addToCart, initializeCart, showTotalModal} from './shopping.cart';
+import {addToCart, initializeCart, showTotalModal} from './Cart.helper';
 import {initializeInventory} from './inventory';
-import {showProductDetails} from './product.details';
+import {showProductDetails} from './Catalog.Product.helper';
+import Button from 'react-bootstrap/Button'
 
 class Catalog extends React.Component{
-    constructor(props){
-        super(props)
-    }
-
     componentDidMount(){
         initializeInventory(); 
         showProductDetails(this.props.match.params.slug); 
@@ -17,13 +14,14 @@ class Catalog extends React.Component{
     render(){
         return(
             <div className="container" id="product">
-                <h2 id="longName"></h2>
+                <h2 id="longName">&nbsp;</h2>
                 <hr />
                 <div className="container row">
                     <div className="col">
-                        <img id="image" src="" width="300" /><br />
-                        <h4 id="price"></h4>
-                        <a id="addToCart" className="btn btn-primary" role="button" onClick={addToCart(item_id, document.getElementById('price').value, 1).bind(this)} style={{color: 'white'}}>Add to Cart &raquo;</a>
+                        <img id="image" src="" width="300" alt="" /><br />
+                        <h4 id="price">&nbsp;</h4>
+                        {/* <a href="#" id="addToCart" className="btn btn-primary" role="button" onClick="" style={{color: 'white'}}>Add to Cart &raquo;</a> */}
+                        <Button id="addToCart" className="btn btn-primary" style={{color: 'white'}}>Add to Cart &raquo;</Button>
                     </div>
                     <div className="col">
                         <h4 id="shortName">About This ...</h4>
